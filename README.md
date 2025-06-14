@@ -5,3 +5,4 @@ Description:
 Skills acquired:
     - DOM manipulations.
     - Nested loops.
+    - CSS used through DOM.

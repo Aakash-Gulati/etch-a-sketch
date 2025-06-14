@@ -10,9 +10,15 @@ numberOfSquares.addEventListener("click",() => {
         square.classList.add("squares");
         square.style.width = `${480 / input}px`;
         square.style.height = `${480 / input}px`;
+        square.hoverCount = 0;
         container.append(square);
         square.addEventListener("mouseenter", () => {
-            square.style.backgroundColor = "yellow";
+            square.hoverCount++;
+            function randomColor(){
+                return Math.floor(Math.random() * 255);
+            }
+            square.style.backgroundColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
+            square.style.opacity = `${1 - (square.hoverCount * 10) / 100}`;
         });
     }
 }
