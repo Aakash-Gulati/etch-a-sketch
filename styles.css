@@ -1,0 +1,12 @@
+#container{
+    height: 480px;
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.squares{
+    background-color: blueviolet;
+    height: 30px;
+    width: 30px;
+}
